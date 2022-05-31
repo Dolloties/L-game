@@ -1,7 +1,7 @@
 extends KinematicBody2D
 var vector
 var velocity = Vector2(-1,2)
-var speed = 400
+var speed = 700
 const explosion = preload("res://explosion.gd")
 # var a = 2
 # var b = "text"

@@ -1,7 +1,7 @@
 extends KinematicBody2D
-export (int) var speedforwards = 1000
-export (int) var speedbackwards = 500
-export (float) var rotation_speed = 5
+export (int) var speedforwards = 400
+export (int) var speedbackwards = 200
+export (float) var rotation_speed = 2
 const bulletPath = preload('res://tanks/Bullet.tscn')
 
 var velocity = Vector2()
