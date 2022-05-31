@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://tanks/tank.tscn" type="PackedScene" id=1]
+[ext_resource path="res://files/Tank Green Base Idle/Tank Green Base Idle.png" type="Texture" id=2]
+[ext_resource path="res://map.tscn" type="PackedScene" id=3]
+[ext_resource path="res://files/Tank Green Turret Idle/Tank Green Turret Idle.png" type="Texture" id=4]
+[ext_resource path="res://tanks2.gd" type="Script" id=5]
+[ext_resource path="res://Ashnikko - Daisy (Sara Landry Flip).mp3" type="AudioStream" id=6]
+[ext_resource path="res://main.gd" type="Script" id=7]
+
+[node name="main" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="map" parent="." instance=ExtResource( 3 )]
+
+[node name="tank" parent="." groups=["game over"] instance=ExtResource( 1 )]
+position = Vector2( 1155, -1400 )
+collision_layer = 34818
+collision_mask = 34882
+
+[node name="RayCast2D" parent="tank/turret1" index="1"]
+collision_mask = 65471
+
+[node name="Label" parent="tank" index="5"]
+margin_left = -14.0
+margin_top = -20.0
+margin_right = 4.0
+margin_bottom = 17.0
+
+[node name="tank2" parent="." groups=["game over"] instance=ExtResource( 1 )]
+position = Vector2( 1059, 2243 )
+collision_layer = 34818
+collision_mask = 34946
+script = ExtResource( 5 )
+
+[node name="body" parent="tank2" index="0"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" parent="tank2" index="1"]
+position = Vector2( 4, -1 )
+
+[node name="turret1" parent="tank2" index="2"]
+texture = ExtResource( 4 )
+
+[node name="RayCast2D" parent="tank2/turret1" index="1"]
+collision_mask = 65407
+
+[node name="back song" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+volume_db = 24.0
+autoplay = true
+
+[editable path="tank"]
+[editable path="tank2"]

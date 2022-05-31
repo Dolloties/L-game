@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/OnlyMP3.to - Tank fire - Sound alerts-C15A_wWitHY-192k-1650135191291 (1).mp3-cd3d45bced1cfe27cd574824697f3d02.mp3str"
+
+[deps]
+
+source_file="res://OnlyMP3.to - Tank fire - Sound alerts-C15A_wWitHY-192k-1650135191291 (1).mp3"
+dest_files=[ "res://.import/OnlyMP3.to - Tank fire - Sound alerts-C15A_wWitHY-192k-1650135191291 (1).mp3-cd3d45bced1cfe27cd574824697f3d02.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

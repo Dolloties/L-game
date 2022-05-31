@@ -1,0 +1,78 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://boter.gd" type="Script" id=1]
+
+[node name="boter" type="Control"]
+anchor_right = 0.641602
+anchor_bottom = 1.07167
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="rechts_midden" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -216.0
+margin_top = -105.5
+margin_bottom = 105.5
+keep_pressed_outside = true
+
+[node name="rechts_boven" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -216.0
+margin_bottom = 211.0
+
+[node name="midden" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -108.0
+margin_top = -105.5
+margin_right = 108.0
+margin_bottom = 105.5
+
+[node name="midden_boven" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -108.0
+margin_right = 108.0
+margin_bottom = 211.0
+
+[node name="links_boven" type="Button" parent="."]
+margin_right = 216.0
+margin_bottom = 211.0
+
+[node name="midden_onder" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -108.0
+margin_top = -211.0
+margin_right = 108.0
+
+[node name="rechts_onder" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -216.0
+margin_top = -211.0
+
+[node name="links_midden" type="Button" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -105.5
+margin_right = 216.0
+margin_bottom = 105.5
+
+[node name="links_onder" type="Button" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -211.0
+margin_right = 216.0

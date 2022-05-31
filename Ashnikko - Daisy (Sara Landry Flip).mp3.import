@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Ashnikko - Daisy (Sara Landry Flip).mp3-eba055dbfb99f1b1e90eb36adf78c9b6.mp3str"
+
+[deps]
+
+source_file="res://Ashnikko - Daisy (Sara Landry Flip).mp3"
+dest_files=[ "res://.import/Ashnikko - Daisy (Sara Landry Flip).mp3-eba055dbfb99f1b1e90eb36adf78c9b6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0.0
